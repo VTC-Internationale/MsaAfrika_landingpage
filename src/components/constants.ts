@@ -71,57 +71,57 @@ export const note = [
 export const dashboardLinks = [
     {
         name: "Tableau de bord",
-        href: "/dashboard",
+        href: "/admin",
         icon: "tabler:layout-dashboard-filled"
     },
     {
         name: "Alertes",
-        href: "/dashboard",
+        href: "/admin",
         icon: "mingcute:notification-fill"
     },
     {
         name: "Historique",
-        href: "/dashboard",
+        href: "/admin",
         icon: "pajamas:history"
     },
     {
         name: "Compte",
-        href: "/dashboard",
+        href: "/admin",
         icon: "bxs:contact"
     },
     {
         name: "Paiements",
-        href: "/dashboard",
+        href: "/admin",
         Icon: "si:credit-card-fill"
     },
     {
         name: "Support",
-        href: "/dashboard",
+        href: "/admin",
         Icon: "mdi:people"
     },
     {
         name: "Offres",
-        href: "/dashboard",
+        href: "/admin",
         icon: "fa6-solid:hand-holding-dollar"
     },
     {
         name: "Statistiques",
-        href: "/dashboard",
+        href: "/admin",
         icon: "prime:chart-bar"
     },
     {
         name: "Tâches",
-        href: "/dashboard",
+        href: "/admin",
         Icon: "mdi:people"
     },
     {
         name: "Paramètres",
-        href: "/dashboard",
+        href: "/admin",
         Icon: "mdi:people"
     },
     {
         name: "Déconnexion",
-        href: "/dashboard",
+        href: "/admin",
         Icon: "mdi:people"
     },
     

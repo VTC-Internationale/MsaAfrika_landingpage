@@ -62,8 +62,8 @@ const Navbar: React.FC = () => {
           </div>
           <div className="flex items-center gap-1 w-full justify-between my-3">
             <LanguageSelect />
-            <Link href="#">
-              <button className="bg-[#4C535D] text-[#ffffff] text-[20px] font-normal rounded-[5px] px-5 py-2.5">
+            <Link href="https://kzmiia445abw5ksfomze.lite.vusercontent.net/ ">
+              <button className="bg-[#4C535D] text-[#ffffff] text-[20px] font-normal rounded-[5px] px-5 py-2.5 cursor-pointer">
                 Se connecter
               </button>
             </Link>
