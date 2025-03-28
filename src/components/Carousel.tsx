@@ -41,8 +41,8 @@ const Carousel = () => {
       <div className="" ref={emblaRef}>
         <div className="flex gap-x-[3rem]">
           {slides.map((slide) => (
-            <div
-              key={slide.id}
+            <div  
+              key={`${slide.id}-${currentIndex}`}
               className="flex-none w-[80%] mx-auto bg-gradient-to-r from-[#BA0218] to-[#54010B] rounded-t-2xl rounded-b-lg"
             >
               <div className="flex flex-col md:flex-row shadow-lg rounded-lg">
@@ -63,7 +63,9 @@ const Carousel = () => {
 
                 {/* Right: Text */}
                 <div className="w-full md:w-1/2  text-white p-6 md:flex items-center">
-                  <p className="text-lg md:text-[30px] text-center">{slide.text}</p>
+                  <p className="text-lg md:text-[30px] text-center">
+                    {slide.text}
+                  </p>
                 </div>
               </div>
             </div>
@@ -76,13 +78,23 @@ const Carousel = () => {
         onClick={scrollPrev}
         className="absolute left-2 top-1/2 -translate-y-1/2 text-[#4C535D] cursor-pointer"
       >
-        <Icon icon="ic:twotone-chevron-left" className="md:h-[50px] md:w-[50px]" width="24" height="24" />
+        <Icon
+          icon="ic:twotone-chevron-left"
+          className="md:h-[50px] md:w-[50px]"
+          width="24"
+          height="24"
+        />
       </button>
       <button
         onClick={scrollNext}
         className="absolute right-2 top-1/2 -translate-y-1/2 text-[#4C535D] cursor-pointer"
       >
-        <Icon icon="ic:twotone-chevron-right" className="md:h-[50px] md:w-[50px]" width="24" height="24" />
+        <Icon
+          icon="ic:twotone-chevron-right"
+          className="md:h-[50px] md:w-[50px]"
+          width="24"
+          height="24"
+        />
       </button>
     </div>
   );

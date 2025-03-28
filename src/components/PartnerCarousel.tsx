@@ -58,13 +58,13 @@ const PartnerCarousel = () => {
               {/* Navigation Buttons */}
               <button
                 onClick={scrollPrev}
-                className="absolute left-2 top-1/2 -translate-y-1/2 text-[#4C535D] cursor-pointer"
+                className={`absolute left-2 top-1/2 -translate-y-1/2 text-[#4C535D] cursor-pointer ${canScrollPrev ? '' : 'opacity-50 pointer-events-none'}`}
               >
                 <Icon icon="ic:twotone-chevron-left" width="24" height="24" />
               </button>
               <button
                 onClick={scrollNext}
-                className="absolute right-2 top-1/2 -translate-y-1/2 text-[#4C535D] cursor-pointer"
+                className={`absolute right-2 top-1/2 -translate-y-1/2 text-[#4C535D] cursor-pointer ${canScrollNext ? '' : 'opacity-50 pointer-events-none'}`}
               >
                 <Icon icon="ic:twotone-chevron-right" width="24" height="24" />
               </button>
